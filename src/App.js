@@ -25,15 +25,16 @@ export default class App extends Component {
     return (
       <StyleProvider style={getTheme(mimoTheme)}>
         <Container >
-          <Router>
+          <AppHeader/>
+          {/* <Router>
             <Stack key='root'>
               <Scene key="feed" component={AppBody} title='Feed' />
               <Scene key="news" component={News} title='News' />
               <Scene key="about" component={About} title='About' />
             </Stack>
-          </Router>
+          </Router> */}
           <AppBody />
-          <AppFooter />
+          {/* <AppFooter /> */}
         </Container>
       </StyleProvider>
     );
